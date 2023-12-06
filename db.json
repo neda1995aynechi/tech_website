@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "admin",
+      "username": "admin",
+      "password": "admin1",
+      "email": "admin@gmail.com",
+      "number": "3456789"
+    },
+    {
+      "fullName": "neda",
+      "number": "098765432",
+      "email": "neda1995aynechi@gmail.com",
+      "password": "neda123",
+      "id": 2
+    },
+    {
+      "fullName": "neda1995",
+      "email": "neda1995@gmail.com",
+      "password": "dark",
+      "id": 3,
+      "number": "1234567"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+.gpt3__profile-container {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gpt3__profile_container-showcase {
+  width: 500px;
+  min-height: 500px;
+  color: white;
+
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.gpt3__profile_container-showcase::before {
+  content: "";
+  background: url(../../assets/profile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  opacity: 0.8;
+}
+
+.gpt3__profile_container-content {
+  width: 500px;
+  min-height: 500px;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.gpt3__profile_container-content h2 {
+  margin-bottom: 5rem;
+  font-family: var(--font-family);
+  font-weight: 800;
+}
+.gpt3__profile_container-content h3 {
+  font-family: var(--font-family);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: var(--color-text);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gpt3__profile_container-content h3 span {
+  font-size: 14px;
+  margin-left: 0.5rem;
+}
+
+.gpt3__profile_container-content p {
+  margin-bottom: 1rem;
+  font-family: var(--font-family);
+}
+.gpt3__profile_container-content label {
+  margin-bottom: 2rem;
+  font-family: var(--font-family);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.gpt3__profile_container-content input {
+  border: none;
+  outline: none;
+  padding: 0.3rem 0.8rem;
+  width: 300px;
+  font-family: var(--font-family);
+
+  font-size: 14px;
+  border-bottom: 3px solid var(--color-subtext);
+  background-color: var(--color-footer);
+  color: #fff;
+
+  -webkit-border-radius: 0.3rem 0.3rem 0 0;
+  -moz-border-radius: 0.3rem 0.3rem 0 0;
+  -ms-border-radius: 0.3rem 0.3rem 0 0;
+  -o-border-radius: 0.3rem 0.3rem 0 0;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.gpt3__profile_container-content button {
+  font-family: var(--font-family);
+  outline: none;
+  border: 1px solid #ff4820;
+  color: #ff4820;
+  background: transparent;
+  padding: 0.3rem 2rem;
+  font-weight: 500;
+}
+.gpt3__profile_container-content button:hover {
+  background: #ff4820;
+  color: #fff;
+
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.gpt3__profile_container-content select {
+  font-family: var(--font-family);
+  color: #fff;
+  background: var(--color-footer);
+  border: none;
+  outline: none;
+  appearance: none;
+  width: 300px;
+  margin-top: 0.3rem;
+}
+.gpt3__profile_container-content select:focus {
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .gpt3__profile_container-content input {
+    width: 190px;
+  }
+  .gpt3__profile_container-content {
+    margin-left: 1rem;
+  }
+  .gpt3__profile_container-showcase {
+    width: 300px;
+    min-height: 300px;
+  }
+  .gpt3__profile_container-content select {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .gpt3__profile-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .gpt3__profile_container-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .gpt3__profile_container-content label,
+  .gpt3__profile_container-content p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+  }
+  .gpt3__profile_container-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .gpt3__profile_container-content input {
+    width: 170px;
+  }
+  .gpt3__profile_container-content {
+    width: 300px;
+  }
+  .gpt3__profile_container-showcase {
+    width: 300px;
+  }
+  .gpt3__profile_container-content h3 {
+    font-size: 16px;
+  }
+}

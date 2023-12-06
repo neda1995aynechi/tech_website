@@ -1,0 +1,133 @@
+.gpt3__login-container {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.gpt3__login_container-content {
+  width: 500px;
+  min-height: 500px;
+  color: white;
+
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.gpt3__login_container-content::before {
+  content: "";
+  background: url(../../assets/ai.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  opacity: 0.3;
+}
+.gpt3__login_container-content h2 {
+  margin-top: 2rem;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+.gpt3__login_container-action {
+  width: 300px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.gpt3__login_container-action h3,
+.gpt3__login_container-content h3 {
+  font-family: var(--font-family);
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.gpt3__login_container-action p {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-size: 12px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.gpt3__login_container-action button {
+  font-family: var(--font-family);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  background-color: transparent;
+  color: var(--color-subtext);
+  border: 1px solid var(--color-subtext);
+  padding: 0.3rem 1.3rem;
+
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+}
+.gpt3__login_container-action button:hover {
+  background-color: #ff4820;
+  border: 1px solid #ff4820;
+  color: #fff;
+  font-weight: 500;
+
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.gpt3__login_container-action input {
+  width: 300px;
+  font-family: var(--font-family);
+  border: none;
+  outline: none;
+  margin: 0.5rem 0;
+  font-size: 14px;
+  padding: 0.5rem;
+  border-bottom: 3px solid var(--color-subtext);
+  background-color: var(--color-footer);
+  color: #fff;
+
+  -webkit-border-radius: 0.3rem 0.3rem 0 0;
+  -moz-border-radius: 0.3rem 0.3rem 0 0;
+  -ms-border-radius: 0.3rem 0.3rem 0 0;
+  -o-border-radius: 0.3rem 0.3rem 0 0;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+@media screen and (max-width: 780px) {
+  .gpt3__login-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .gpt3__login_container-content {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .gpt3__login_container-action {
+    justify-content: center;
+    align-items: center;
+  }
+  .gpt3__login_container-action input {
+    width: 200px;
+  }
+}
